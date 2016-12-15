@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "C:\\Users\\flyblue\\Desktop\\CoolWeather1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\refresh.png",
+        "source": "C:\\Users\\flyblue\\Desktop\\CoolWeather1\\app\\src\\main\\res\\drawable-hdpi\\refresh.png"
+    },
+    {
+        "merged": "C:\\Users\\flyblue\\Desktop\\CoolWeather1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\home.png",
+        "source": "C:\\Users\\flyblue\\Desktop\\CoolWeather1\\app\\src\\main\\res\\drawable-hdpi\\home.png"
+    },
+    {
+        "merged": "C:\\Users\\flyblue\\Desktop\\CoolWeather1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_launcher.png",
+        "source": "C:\\Users\\flyblue\\Desktop\\CoolWeather1\\app\\src\\main\\res\\drawable-hdpi\\ic_launcher.png"
+    }
+]
