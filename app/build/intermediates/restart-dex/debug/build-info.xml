@@ -5,29 +5,29 @@
     density="xhdpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="60096499019420"
+    timestamp="75297813576999"
     token="-3865682136836835062"
     verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="1669" />
+        duration="282" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="218" />
+        duration="231" />
     <task
         name="verifier"
-        duration="91" />
+        duration="68" />
 
     <artifact
         location="C:\Users\flyblue\Desktop\CoolWeather1\app\build\outputs\apk\app-debug.apk"
         type="MAIN" />
 
     <build
-        timestamp="60096499019420"
+        timestamp="75297813576999"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="C:\Users\flyblue\Desktop\CoolWeather1\app\build\outputs\apk\app-debug.apk"

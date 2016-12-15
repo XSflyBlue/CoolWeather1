@@ -12,6 +12,7 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.view.View.OnClickListener;
@@ -72,15 +73,12 @@ public class WeatherActivity extends Activity implements OnClickListener{
 		refreshWeather = (Button) findViewById(R.id.refresh_weather);
 		String weatherId = getIntent().getStringExtra("weather_id");
 		if (!TextUtils.isEmpty(weatherId)) {
-			// 有县级代号时就去查询天气
+			// 查询天气
 			publishText.setText("同步中...");
 			weatherInfoLayout.setVisibility(View.INVISIBLE);
 			cityNameText.setVisibility(View.INVISIBLE);
-			queryFromServer(weatherId);
-		} else {
-			// 没有县级代号时就直接显示本地天气
-			showWeather();
-		}
+			queryFromServer(weatherId);}
+
 		switchCity.setOnClickListener(this);
 		refreshWeather.setOnClickListener(this);
 	}
@@ -111,11 +109,13 @@ public class WeatherActivity extends Activity implements OnClickListener{
 	 * 根据传入的地址和类型去向服务器查询天气代号或者天气信息。
 	 */
 	private void queryFromServer(final String weatherId) {
-		String weatherUrl = "https://api.heweather.com/x3/weather?cityid=" + weatherId + "&key=bc0418b57b2d4918819d3974ac1285d9";
+		String weatherUrl = "https://api.heweather.com/x3/weather?cityid=" + weatherId + "&key=7a3d9c64739b41a1869981bc67d40137";
+		Log.d("TAG1", weatherUrl);
 		HttpUtil.sendHttpRequest(weatherUrl, new HttpCallbackListener() {
 			@Override
 			public void onFinish(final String response) {
 				// 处理服务器返回的天气信息
+				Log.d("TAG1", response);
 				Utility.handleWeatherResponse(WeatherActivity.this, response);
 				runOnUiThread(new Runnable() {
 					@Override

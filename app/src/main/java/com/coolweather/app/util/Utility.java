@@ -100,24 +100,27 @@ public class Utility {
 	 */
 	public static void handleWeatherResponse(Context context, String response) {
 		try {
+			Log.v("response",response);
 			JSONObject jsonObject = new JSONObject(response);
-            JSONArray HeWeather5 = jsonObject.getJSONArray("HeWeather5");
-            JSONObject basic = (JSONObject) HeWeather5.get(0);
-            
-            JSONArray dailyForecast = jsonObject.getJSONArray("daily_forecast");
-            JSONObject cond = dailyForecast.getJSONObject(1);
-            JSONObject tmp = (JSONObject) dailyForecast.get(7);
-            
-			String cityName = basic.getString("city");	
+            JSONArray HeWeather = jsonObject.getJSONArray("HeWeather data service 3.0");
+			JSONObject HeWeatherChild = HeWeather.getJSONObject(0);
+
+			JSONObject basic = HeWeatherChild.getJSONObject("basic");
+            JSONArray dailyForecast = HeWeatherChild.getJSONArray("daily_forecast");
+
+            JSONObject cond = dailyForecast.getJSONObject(0).getJSONObject("cond");
+            JSONObject tmp = dailyForecast.getJSONObject(0).getJSONObject("tmp");
+
+			String cityName = basic.getString("city");
 			String weatherCode = basic.getString("id");
-			
-			String temp1 = tmp.getString("temp1");
-			String temp2 = tmp.getString("temp2");
-			
+
+			String temp1 = tmp.getString("min");
+			String temp2 = tmp.getString("max");
+
 			String weatherDesp = cond.getString("txt_d");
-			
-			String publishTime = basic.getJSONObject("update").getString("date");
-			
+
+			String publishTime = basic.getJSONObject("update").getString("loc");
+			Log.v("response1",cityName+weatherCode+temp1+temp2+weatherDesp+publishTime);
 			saveWeatherInfo(context, cityName, weatherCode, temp1, temp2,
 					weatherDesp, publishTime);
 		} catch (JSONException e) {

@@ -3,12 +3,39 @@
 
     <item
         is-multidex="false"
+        jar="C:\Users\flyblue\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.5.0\4b0bb6bfbecbdd42b97ff400af342bfe7f32bc83\okhttp-3.5.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="4b0bb6bfbecbdd42b97ff400af342bfe7f32bc83">
+        <dex dex="C:\Users\flyblue\Desktop\CoolWeather1\app\build\intermediates\pre-dexed\debug\okhttp-3.5.0_12efd0488e2101843822c9171eae9720f55b1116.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="C:\Users\flyblue\Desktop\CoolWeather1\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\libs\internal_impl-23.4.0.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
         sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
         <dex dex="C:\Users\flyblue\Desktop\CoolWeather1\app\build\intermediates\pre-dexed\debug\internal_impl-23.4.0_a741289c495197ba493dcf09541970a170fde52c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\flyblue\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.11.0\840897fcd7223a8143f1d9b6f69714e7be34fd50\okio-1.11.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="840897fcd7223a8143f1d9b6f69714e7be34fd50">
+        <dex dex="C:\Users\flyblue\Desktop\CoolWeather1\app\build\intermediates\pre-dexed\debug\okio-1.11.0_6c5242f16575070ccf9bbd52c6835cf42008079b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\flyblue\Desktop\CoolWeather1\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="676bff57c6c6543e15af842e8269d308b6771634">
+        <dex dex="C:\Users\flyblue\Desktop\CoolWeather1\app\build\intermediates\pre-dexed\debug\instant-run-bootstrap_a871a729cda46b8b55b9ab3e0f165bf6a86f8554.jar" />
     </item>
     <item
         is-multidex="false"
@@ -34,17 +61,8 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
-        sha1="16af3be42ac4d532c46fe197f2afa8a75bacfefd">
+        sha1="5d85b9a49ae53a86ae3aeb294e8ce3841719e6f5">
         <dex dex="C:\Users\flyblue\Desktop\CoolWeather1\app\build\intermediates\pre-dexed\debug\instant-run_bd55c6aadc86cb027c6c387af31e8565665933ac.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\flyblue\Desktop\CoolWeather1\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="4ce50a78ea397b5cfd4d2d948d13c31c1204960a">
-        <dex dex="C:\Users\flyblue\Desktop\CoolWeather1\app\build\intermediates\pre-dexed\debug\instant-run-bootstrap_a871a729cda46b8b55b9ab3e0f165bf6a86f8554.jar" />
     </item>
 
 </items>
