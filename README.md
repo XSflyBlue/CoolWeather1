@@ -6,4 +6,5 @@
 2. 更改天气信息API:https://free-api.heweather.com/x3/
 
 3. 其他局部调整。
-###http请求方式依然使用HttpURLConnection
+
+http请求方式依然使用HttpURLConnection
