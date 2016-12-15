@@ -34,7 +34,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
-        sha1="676bff57c6c6543e15af842e8269d308b6771634">
+        sha1="bc794464d9783b488005eff66d824865303311d1">
         <dex dex="C:\Users\flyblue\Desktop\CoolWeather1\app\build\intermediates\pre-dexed\debug\instant-run-bootstrap_a871a729cda46b8b55b9ab3e0f165bf6a86f8554.jar" />
     </item>
     <item
@@ -61,7 +61,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
-        sha1="5d85b9a49ae53a86ae3aeb294e8ce3841719e6f5">
+        sha1="73715a474fe1b7a75fa19296c3e9e89f3424fd99">
         <dex dex="C:\Users\flyblue\Desktop\CoolWeather1\app\build\intermediates\pre-dexed\debug\instant-run_bd55c6aadc86cb027c6c387af31e8565665933ac.jar" />
     </item>
 

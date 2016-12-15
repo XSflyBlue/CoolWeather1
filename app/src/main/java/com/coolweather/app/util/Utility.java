@@ -1,5 +1,6 @@
 package com.coolweather.app.util;
 
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
@@ -115,15 +116,22 @@ public class Utility {
 			String weatherCode = basic.getString("id");
 
 			String temp1 = tmp.getString("min");
-			String temp2 = tmp.getString("max");
+			String temp2 = tmp.getString("max")+"℃";
 
 			String weatherDesp = cond.getString("txt_d");
-
 			String publishTime = basic.getJSONObject("update").getString("loc");
-			Log.v("response1",cityName+weatherCode+temp1+temp2+weatherDesp+publishTime);
+
+			//在把一个字符串解析为日期的时候，请注意格式必须和给定的字符串格式匹配
+			SimpleDateFormat sdf1 = new SimpleDateFormat("yyyy-MM-dd HH:mm");
+			Date dd = sdf1.parse(publishTime);
+			SimpleDateFormat sdf = new SimpleDateFormat("HH:mm");
+			String publishTimeF = sdf.format(dd);
+
 			saveWeatherInfo(context, cityName, weatherCode, temp1, temp2,
-					weatherDesp, publishTime);
+					weatherDesp, publishTimeF);
 		} catch (JSONException e) {
+			e.printStackTrace();
+		} catch (ParseException e) {
 			e.printStackTrace();
 		}
 	}

@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\flyblue\Desktop\CoolWeather1\app\src\main\AndroidManifest.xml:2:1-32:12
+ADDED from C:\Users\flyblue\Desktop\CoolWeather1\app\src\main\AndroidManifest.xml:2:1-33:12
 	package
 		ADDED from C:\Users\flyblue\Desktop\CoolWeather1\app\src\main\AndroidManifest.xml:3:5-34
 		INJECTED from C:\Users\flyblue\Desktop\CoolWeather1\app\src\main\AndroidManifest.xml
@@ -31,14 +31,14 @@ ADDED from C:\Users\flyblue\Desktop\CoolWeather1\app\src\main\AndroidManifest.xm
 	android:name
 		ADDED from C:\Users\flyblue\Desktop\CoolWeather1\app\src\main\AndroidManifest.xml:11:22-64
 application
-ADDED from C:\Users\flyblue\Desktop\CoolWeather1\app\src\main\AndroidManifest.xml:13:5-30:19
+ADDED from C:\Users\flyblue\Desktop\CoolWeather1\app\src\main\AndroidManifest.xml:13:5-31:19
 MERGED from [com.android.support:support-v4:23.4.0] C:\Users\flyblue\Desktop\CoolWeather1\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:22:5-20
 	android:label
 		ADDED from C:\Users\flyblue\Desktop\CoolWeather1\app\src\main\AndroidManifest.xml:16:9-41
 	android:allowBackup
 		ADDED from C:\Users\flyblue\Desktop\CoolWeather1\app\src\main\AndroidManifest.xml:14:9-35
 	android:icon
-		ADDED from C:\Users\flyblue\Desktop\CoolWeather1\app\src\main\AndroidManifest.xml:15:9-45
+		ADDED from C:\Users\flyblue\Desktop\CoolWeather1\app\src\main\AndroidManifest.xml:15:9-38
 	android:theme
 		ADDED from C:\Users\flyblue\Desktop\CoolWeather1\app\src\main\AndroidManifest.xml:17:9-40
 activity#com.coolweather.app.activity.ChooseAreaActivity
@@ -62,10 +62,10 @@ ADDED from C:\Users\flyblue\Desktop\CoolWeather1\app\src\main\AndroidManifest.xm
 	android:name
 		ADDED from C:\Users\flyblue\Desktop\CoolWeather1\app\src\main\AndroidManifest.xml:27:19-78
 service#com.coolweather.app.service.AutoUpdateService
-ADDED from C:\Users\flyblue\Desktop\CoolWeather1\app\src\main\AndroidManifest.xml:28:9-89
+ADDED from C:\Users\flyblue\Desktop\CoolWeather1\app\src\main\AndroidManifest.xml:29:9-89
 	android:name
-		ADDED from C:\Users\flyblue\Desktop\CoolWeather1\app\src\main\AndroidManifest.xml:28:18-78
+		ADDED from C:\Users\flyblue\Desktop\CoolWeather1\app\src\main\AndroidManifest.xml:29:18-78
 receiver#com.coolweather.app.receiver.AutoUpdateReceiver
-ADDED from C:\Users\flyblue\Desktop\CoolWeather1\app\src\main\AndroidManifest.xml:29:9-93
+ADDED from C:\Users\flyblue\Desktop\CoolWeather1\app\src\main\AndroidManifest.xml:30:9-93
 	android:name
-		ADDED from C:\Users\flyblue\Desktop\CoolWeather1\app\src\main\AndroidManifest.xml:29:19-81
+		ADDED from C:\Users\flyblue\Desktop\CoolWeather1\app\src\main\AndroidManifest.xml:30:19-81

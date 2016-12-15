@@ -72,12 +72,16 @@ public class WeatherActivity extends Activity implements OnClickListener{
 		switchCity = (Button) findViewById(R.id.switch_city);
 		refreshWeather = (Button) findViewById(R.id.refresh_weather);
 		String weatherId = getIntent().getStringExtra("weather_id");
+
 		if (!TextUtils.isEmpty(weatherId)) {
 			// 查询天气
 			publishText.setText("同步中...");
 			weatherInfoLayout.setVisibility(View.INVISIBLE);
 			cityNameText.setVisibility(View.INVISIBLE);
-			queryFromServer(weatherId);}
+			queryFromServer(weatherId);
+		}else {
+			showWeather();
+		}
 
 		switchCity.setOnClickListener(this);
 		refreshWeather.setOnClickListener(this);
